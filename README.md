@@ -49,6 +49,8 @@ yarn add -D tailwindcss@latest postcss@latest autoprefixer@latest
 # react-icons
 yarn add react-icons
 
+#next-themes (dark mode)
+yarn add next-themes
 
 ```
 
