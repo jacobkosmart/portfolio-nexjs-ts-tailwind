@@ -1,5 +1,7 @@
+import { motion } from "framer-motion";
 import { GetServerSidePropsContext, GetStaticPathsContext } from "next";
 import React from "react";
+import { fadeInUP, routeAnimation, stagger } from "../animation";
 import { ServiceCard } from "../components";
 import { services } from "../db/data";
 
@@ -21,7 +23,13 @@ export const getStaticProps = async (context: GetStaticPathsContext) => {
 
 const index = () => {
   return (
-    <div className="flex flex-col flex-grow px-6 pt-1">
+    <motion.div
+      className="flex flex-col flex-grow px-6 pt-1"
+      variants={routeAnimation}
+      initial="initial"
+      animate="animate"
+      exit="exit"
+    >
       <h5 className="my-3 font-medium">
         I am currently looking for job. I have a experience and have a Youtube
         Channel where just start Front-end development{" "}
@@ -31,18 +39,25 @@ const index = () => {
         style={{ marginLeft: "-1.5rem", marginRight: "-1.5rem" }}
       >
         <h6 className="my-3 text-xl font-bold tracking-wide">What I Offer</h6>
-        <div className="grid gap-6 lg:grid-cols-2">
+
+        <motion.div
+          className="grid gap-6 lg:grid-cols-2"
+          variants={stagger}
+          initial="initial"
+          animate="animate"
+        >
           {services.map((service) => (
-            <div
+            <motion.div
               key={service.id}
               className="bg-gray-200 rounded-lg dark:bg-dark-200 lg:col-span-1"
+              variants={fadeInUP}
             >
               <ServiceCard service={service} />
-            </div>
+            </motion.div>
           ))}
-        </div>
+        </motion.div>
       </div>
-    </div>
+    </motion.div>
   );
 };
 

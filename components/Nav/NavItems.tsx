@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { INavItems } from "../type";
+import { INavItems } from "../../type";
 
 const NavItems: React.FC<INavItems> = ({
   activeItem,

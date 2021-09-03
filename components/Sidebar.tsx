@@ -2,6 +2,7 @@ import React from "react";
 import { GiTie } from "react-icons/gi";
 import { AiFillGithub, AiFillLinkedin, AiFillYoutube } from "react-icons/ai";
 import { useTheme } from "next-themes";
+import Image from "next/image";
 
 const Sidebar = () => {
   const { theme, setTheme } = useTheme();
@@ -12,10 +13,14 @@ const Sidebar = () => {
 
   return (
     <div>
-      <img
+      <Image
         src="https://jacobko.info/assets/images/Jacob_avatar.png"
         alt="user avater"
-        className="w-32 h-32 mx-auto rounded-full"
+        className="mx-auto rounded-full "
+        height="128"
+        width="128"
+        layout="intrinsic"
+        quality="100"
       />
       <h3 className="my-4 text-3xl font-medium tracking-wider font-kausan">
         <span className="text-green">Jacob </span>

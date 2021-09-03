@@ -49,9 +49,11 @@ yarn add -D tailwindcss@latest postcss@latest autoprefixer@latest
 # react-icons
 yarn add react-icons
 
-#next-themes (dark mode)
+# next-themes (dark mode)
 yarn add next-themes
 
+# framer-motion
+yarn add framer-motion@3.10.3
 ```
 
 ## 🔎 3.주요 코드
@@ -60,7 +62,9 @@ yarn add next-themes
 
 Next.js - [https://nextjs.org/docs/getting-started](https://nextjs.org/docs/getting-started)
 
-tailwindcss with next.js - [https://tailwindcss.com/docs/guides/nextjs](https://tailwindcss.com/docs/guides/nextjs)
+Tailwindcss with next.js - [https://tailwindcss.com/docs/guides/nextjs](https://tailwindcss.com/docs/guides/nextjs)
+
+Framer Motion - [https://www.framer.com/docs/introduction/](https://www.framer.com/docs/introduction/)
 
 <!-- TODO -->
 

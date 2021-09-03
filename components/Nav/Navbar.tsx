@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { useRouter } from "next/dist/client/router";
-import { NavItems } from ".";
+import { NavItems } from "..";
 
 const Navbar = () => {
   // state
