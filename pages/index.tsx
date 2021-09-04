@@ -9,19 +9,23 @@ import { services } from "../db/data";
 export const getStaticProps = async (context: GetStaticPathsContext) => {
   // calculation
 
-  const res = await fetch("http://localhost:3000/api/services");
-  const data = await res.json();
+  // console.log(process.env.VERCEL_URL);
 
-  console.log("SERVER", services);
+  // const res = await fetch(`${process.env.VERCEL_URL}/api/services`);
+  // const data = await res.json();
+
+  // console.log("SERVER", services);
 
   return {
     props: {
-      services: data.services,
+      endpoint: process.env.VERCEL_URL,
     },
   };
 };
 
-const index = () => {
+const About = ({ endpoint }) => {
+  console.log(endpoint);
+
   return (
     <motion.div
       className="flex flex-col flex-grow px-6 pt-1"
@@ -61,4 +65,4 @@ const index = () => {
   );
 };
 
-export default index;
+export default About;

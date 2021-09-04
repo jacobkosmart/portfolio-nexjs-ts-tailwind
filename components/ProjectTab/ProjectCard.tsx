@@ -1,4 +1,3 @@
-import { useState } from "react";
 import { AiFillGithub, AiFillProject } from "react-icons/ai";
 import { MdClose } from "react-icons/md";
 import { IProject } from "../../type";
@@ -8,6 +7,8 @@ import { fadeInUP, stagger } from "../../animation";
 
 const ProjectCard: React.FC<{
   project: IProject;
+  showDetail: null | number;
+  setShowDetail: React.Dispatch<React.SetStateAction<number | null>>;
 }> = ({
   project: {
     name,
@@ -19,29 +20,31 @@ const ProjectCard: React.FC<{
     img_path,
     key_techs,
   },
+  showDetail,
+  setShowDetail,
 }) => {
-  // state modal
-  const [showDetail, setShowDetail] = useState<boolean>(false);
-
   return (
     <div>
       <Image
         src={img_path}
         alt={name}
         className="cursor-pointer"
-        onClick={() => setShowDetail(true)}
+        onClick={() => setShowDetail(id)}
         width="300"
         height="150"
         layout="responsive"
         quality="100"
       />
-      <p className="my-2 text-center">{name}</p>
+      <p className="pt-2 my-2 text-center">{name}</p>
 
       {/* Shoe modal details */}
-      {showDetail && (
-        <div className="absolute top-0 left-0 z-10 grid w-full h-auto p-2 text-black bg-gray-100 md:grid-cols-2 gap-x-12 dark:text-white dark:bg-dark-100">
+      {showDetail === id && (
+        <div className="absolute left-0 z-10 grid w-full h-auto p-2 text-black bg-gray-100 rounded-lg top-32 md:pt-10 md:grid-cols-2 gap-x-12 dark:text-white dark:bg-dark-100">
           <motion.div variants={stagger} initial="initial" animate="animate">
-            <motion.div variants={fadeInUP}>
+            <motion.div
+              variants={fadeInUP}
+              className="border-4 rounded-lg border-green dark:border-gray-100"
+            >
               <Image
                 src={img_path}
                 alt={name}
@@ -96,7 +99,7 @@ const ProjectCard: React.FC<{
           </motion.div>
 
           <button className="absolute p-1 bg-gray-200 rounded-full top-3 right-3 focus:outline-none dark:bg-dark-200">
-            <MdClose size={30} onClick={() => setShowDetail(false)} />
+            <MdClose size={30} onClick={() => setShowDetail(null)} />
           </button>
         </div>
       )}

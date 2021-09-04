@@ -21,7 +21,7 @@ const Navbar = () => {
         <span className="text-xl font-bold border-b-4 text-green border-green md:text-2xl">
           {activeItem}
         </span>
-        <div className="flex space-x-5 font-lg">
+        <div className="flex space-x-5 text-xl">
           <NavItems
             activeItem={activeItem}
             setActiveItem={setActiveItem}
