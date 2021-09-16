@@ -1,6 +1,7 @@
 import React from "react";
-import { GiTie } from "react-icons/gi";
+import { HiOutlineHome } from "react-icons/hi";
 import { AiFillGithub, AiFillLinkedin, AiFillYoutube } from "react-icons/ai";
+import { SiNotion } from "react-icons/si";
 import { useTheme } from "next-themes";
 import Image from "next/image";
 
@@ -31,22 +32,41 @@ const Sidebar = () => {
       </p>
       <a
         className="flex items-center justify-center px-2 py-1 my-3 bg-gray-200 rounded-full dark:bg-dark-200"
-        href=""
-        download="name"
+        href="https://jacobko.info/"
+        target="_blank"
+        rel="noreferrer"
       >
-        <GiTie className="w-6 h-6" /> Download Resume
+        <HiOutlineHome className="w-4 h-4 mb-1 mr-2" /> Jacob&apos;s DevLog
       </a>
 
       {/* social icon */}
-      <div className="flex justify-around w-9/12 mx-auto my-5 text-green md:w-full">
-        <a href="">
-          <AiFillYoutube className="w-8 h-8 cursor-pointer" />
+      <div className="flex justify-around w-9/12 mx-auto my-5 cursor-pointer text-green md:w-full">
+        <a
+          href="https://github.com/jacobkosmart"
+          target="_blank"
+          rel="noreferrer"
+        >
+          <AiFillGithub
+            className="w-8 h-8 cursor-pointer"
+            aria-label="Github"
+          />
         </a>
-        <a href="">
-          <AiFillGithub className="w-8 h-8 cursor-pointer" />
+        <a
+          href="https://jacobko.notion.site/f375245e8e264a30bc366ede47814809"
+          target="_blank"
+          rel="noreferrer"
+        >
+          <SiNotion className="w-8 h-8 cursor-pointer" aria-label="LinkIn" />
         </a>
-        <a href="">
-          <AiFillLinkedin className="w-8 h-8 cursor-pointer" />
+        <a
+          href="https://www.youtube.com/channel/UCXXutxMvNx4EKXB-uQnm2oQ"
+          target="_blank"
+          rel="noreferrer"
+        >
+          <AiFillYoutube
+            className="w-8 h-8 cursor-pointer"
+            aria-label="Youtube"
+          />
         </a>
       </div>
 
@@ -55,15 +75,30 @@ const Sidebar = () => {
         className="py-4 my-5 bg-gray-200 dark:bg-dark-200"
         style={{ marginLeft: "-1rem", marginRight: "-1rem" }}
       >
-        <p className="my-2">jacobkosmart@gmail.com</p>
-        <p className="my-2">https://jacobko.info</p>
+        <a
+          className="my-2 no-underline cursor-pointer hover:text-blue-800"
+          href="mailto:jacobkosmart@gmail.com"
+          target="_blank"
+          rel="noreferrer"
+        >
+          <p className="py-1">jacobkosmart@gmail.com</p>
+        </a>
+        <a
+          className="my-2 no-underline cursor-pointer hover:text-blue-800"
+          href="https://jacobko.info"
+          target="_blank"
+          rel="noreferrer"
+        >
+          <p className="py-1">https://jacobko.info</p>
+        </a>
       </div>
       {/* Email Button */}
+      <a href="https://jacobko.info/" target="_blank" rel="noreferrer"></a>
       <button
         onClick={() => window.open("mailto: jacobkosmart@gmail.com")}
         className="w-8/12 px-5 py-2 my-2 text-white rounded-full bg-gradient-to-r from-green to-blue-400 focus:outline-none"
       >
-        Email me
+        Korean 🇰🇷
       </button>
       <button
         className="w-8/12 px-5 py-2 my-2 text-white rounded-full bg-gradient-to-r from-green to-blue-400"
