@@ -35,8 +35,10 @@ const About = ({ endpoint }) => {
       exit="exit"
     >
       <h5 className="my-3 font-medium">
-        I am currently looking for job. I have a experience and have a Youtube
-        Channel where just start Front-end development{" "}
+        Creative Front-End Developer providing high-impact web solutions for
+        diverse industry organizations. Skilled in designing, developing and
+        testing multiple web-based applications incorporating a range of
+        technologies.
       </h5>
       <div
         className="flex-grow p-4 mt-5 bg-gray-400 dark:bg-dark-100"

@@ -28,15 +28,15 @@ const Sidebar = () => {
         Ko
       </h3>
       <p className="px-2 py-1 my-3 bg-gray-200 rounded-full dark:bg-dark-200">
-        Front-end Developer
+        Front-End Developer
       </p>
       <a
         className="flex items-center justify-center px-2 py-1 my-3 bg-gray-200 rounded-full dark:bg-dark-200"
-        href="https://jacobko.info/"
+        href="https://jacobko.notion.site/Jacob-Taehyun-Ko-f375245e8e264a30bc366ede47814809"
         target="_blank"
         rel="noreferrer"
       >
-        <HiOutlineHome className="w-4 h-4 mb-1 mr-2" /> Jacob&apos;s DevLog
+        Detailed resume
       </a>
 
       {/* social icon */}
@@ -51,12 +51,8 @@ const Sidebar = () => {
             aria-label="Github"
           />
         </a>
-        <a
-          href="https://jacobko.notion.site/f375245e8e264a30bc366ede47814809"
-          target="_blank"
-          rel="noreferrer"
-        >
-          <SiNotion className="w-8 h-8 cursor-pointer" aria-label="LinkIn" />
+        <a href="https://jacobko.info" target="_blank" rel="noreferrer">
+          <HiOutlineHome className="w-8 h-8 cursor-pointer" aria-label="Home" />
         </a>
         <a
           href="https://www.youtube.com/channel/UCXXutxMvNx4EKXB-uQnm2oQ"

@@ -4,6 +4,10 @@ import { FaServer } from "react-icons/fa";
 import { AiOutlineApi } from "react-icons/ai";
 import { BsCircleFill } from "react-icons/bs";
 import { MdDeveloperMode } from "react-icons/md";
+import { FaPhotoVideo } from "react-icons/fa";
+import { BsCodeSlash } from "react-icons/bs";
+import { GiTalk } from "react-icons/gi";
+import { MdReportProblem } from "react-icons/md";
 
 export const services: IService[] = [
   {
@@ -11,42 +15,41 @@ export const services: IService[] = [
     Icon: RiComputerLine,
     title: "Frontend Development",
     about:
-      "I can build a beautiful and scalable SPA using <b> HTML</b>, <b>SCSS</b>, <b>Vue.js</b> and <b>React.js</b>",
+      "I can build a beautiful and scalable SPA using <b> HTML</b>, <b>SCSS</b>, <b>React</b> and <b>Vue.js</b>",
   },
   {
     id: 2,
     Icon: FaServer,
-    title: "Backend Development",
+    title: "Network",
     about:
-      "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestias aut, repellat ipsum facere voluptate dicta obcaecati deserunt nobis suscipit eaque?",
+      "Design and install network system such as cabling, routers, switches and servers",
   },
   {
     id: 3,
-    Icon: AiOutlineApi,
-    title: "Frontend Dev",
+    Icon: FaPhotoVideo,
+    title: "UI Edit",
     about:
-      "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestias aut, repellat ipsum facere voluptate dicta obcaecati deserunt nobis suscipit eaque?",
+      "Handle stunning user interface and outstanding photos and videos editing using photoshop and Premier Pro",
   },
   {
     id: 4,
-    Icon: RiComputerLine,
-    title: "Frontend Dev",
-    about:
-      "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestias aut, repellat ipsum facere voluptate dicta obcaecati deserunt nobis suscipit eaque?",
+    Icon: BsCodeSlash,
+    title: "Clean cord",
+    about: "Focus on writing maintainable, modular and refactoring clean code",
   },
   {
     id: 5,
-    Icon: RiComputerLine,
-    title: "Frontend Dev",
+    Icon: GiTalk,
+    title: "Communication",
     about:
-      "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestias aut, repellat ipsum facere voluptate dicta obcaecati deserunt nobis suscipit eaque?",
+      "Fluent verbal and written English and familiar with hanging out with team member",
   },
   {
     id: 6,
-    Icon: RiComputerLine,
-    title: "Frontend Dev",
+    Icon: MdReportProblem,
+    title: "Problem solving",
     about:
-      "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestias aut, repellat ipsum facere voluptate dicta obcaecati deserunt nobis suscipit eaque?",
+      "Establish high-quality user requirements on the basis of identified business needs",
   },
 ];
 
@@ -146,7 +149,7 @@ export const projectsData: IProject[] = [
     id: 3,
     name: "Quiz App",
     description: "Simple quiz App with vanilla JS",
-    img_path: "/images/todolist.gif",
+    img_path: "/images/quiz_app.gif",
     deployed_url: "https://quiz1.jacobko.info/",
     github_url: "https://github.com/jacobkosmart/24.May.21_QuizApp_Vanilla-JS",
     category: ["Vanilla-JS"],
