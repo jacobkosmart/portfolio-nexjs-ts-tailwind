@@ -55,7 +55,7 @@ const resume = () => {
               Gangbuk samsung hospital (March 2009 ~ March 2012)
             </p>
             <p className="my-3">
-              use x-ray and other imaging equipment to take images of injuries
+              using x-ray and other imaging equipment to take images of injuries
               and diseases.
             </p>
           </div>
@@ -64,9 +64,11 @@ const resume = () => {
           <h5 className="my-5 text-2xl font-bold">Education</h5>
           <div>
             <h5 className="my-4 text-xl font-bold">
-              여기 방송대 영문과학위 써야 됨{" "}
+              Bachelor in English language literature
             </h5>
-            <p className="my-2 font-semibold">방송통신대 </p>
+            <p className="my-2 font-semibold">
+              Korea National Open University, KR (February 2020)
+            </p>
           </div>
           <div>
             <h5 className="my-4 text-xl font-bold">
@@ -80,7 +82,7 @@ const resume = () => {
             </h5>
             <p className="my-2 font-semibold">
               {" "}
-              Shin Heung Colleage, KR (February 2009)
+              Shin Heung College, KR (February 2009)
             </p>
           </div>
         </div>

@@ -1,7 +1,6 @@
 import React from "react";
-import { HiOutlineHome } from "react-icons/hi";
 import { AiFillGithub, AiFillLinkedin, AiFillYoutube } from "react-icons/ai";
-import { SiNotion } from "react-icons/si";
+import { IoMdHome } from "react-icons/io";
 import { useTheme } from "next-themes";
 import Image from "next/image";
 
@@ -52,7 +51,7 @@ const Sidebar = () => {
           />
         </a>
         <a href="https://jacobko.info" target="_blank" rel="noreferrer">
-          <HiOutlineHome className="w-8 h-8 cursor-pointer" aria-label="Home" />
+          <IoMdHome className="w-8 h-8 cursor-pointer" aria-label="Home" />
         </a>
         <a
           href="https://www.youtube.com/channel/UCXXutxMvNx4EKXB-uQnm2oQ"
@@ -91,10 +90,14 @@ const Sidebar = () => {
       {/* Email Button */}
       <a href="https://jacobko.info/" target="_blank" rel="noreferrer"></a>
       <button
-        onClick={() => window.open("mailto: jacobkosmart@gmail.com")}
+        onClick={() =>
+          window.open(
+            "https://jacobko.notion.site/Jacob-Taehyun-Ko-f375245e8e264a30bc366ede47814809"
+          )
+        }
         className="w-8/12 px-5 py-2 my-2 text-white rounded-full bg-gradient-to-r from-green to-blue-400 focus:outline-none"
       >
-        Korean 🇰🇷
+        Korean resume
       </button>
       <button
         className="w-8/12 px-5 py-2 my-2 text-white rounded-full bg-gradient-to-r from-green to-blue-400"
