@@ -251,4 +251,14 @@ export const projectsData: IProject[] = [
     category: ["React"],
     key_techs: ["React", "Style-component"],
   },
+  {
+    id: 11,
+    name: "Portfolio",
+    description: "Describe Jacob's career and collection of projects",
+    img_path: "/images/portfolio.gif",
+    deployed_url: "https://portfolio.jacobko.info/",
+    github_url: "https://github.com/jacobkosmart/portfolio-nexjs-ts-tailwind",
+    category: ["Next.js", "TypeScript"],
+    key_techs: ["Next.js", "TypeScript", "TailwinCss"],
+  },
 ];

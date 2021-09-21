@@ -12,6 +12,7 @@ const ProjectNavbar: React.FC<{
       <ProjectNavItem value="TypeScript" {...props} />
       <ProjectNavItem value="Vue.js" {...props} />
       <ProjectNavItem value="Firebase" {...props} />
+      <ProjectNavItem value="Next.js" {...props} />
     </div>
   );
 };

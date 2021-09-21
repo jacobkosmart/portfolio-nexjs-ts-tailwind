@@ -37,4 +37,5 @@ export type Category =
   | "React"
   | "Vue.js"
   | "Firebase"
-  | "TypeScript";
+  | "TypeScript"
+  | "Next.js";
