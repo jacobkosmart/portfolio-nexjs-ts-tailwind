@@ -2,7 +2,7 @@
 
 <a href="https://portfolio.jacobko.info/" target="_blank">Live Demo</a>
 
-![Animation2](https://user-images.githubusercontent.com/28912774/131269977-3e227840-34c2-4f3b-8004-aba1d3ad7065.gif)
+![portpolio gif](https://drive.google.com/uc?export=view&id=1-7dHbudLVChJFfoRtrmV_sXuXFng5OzZ)
 
 ## 💻 1.프로젝트 소개
 
@@ -26,7 +26,7 @@
 
 - Next.js 를 사용하여 정적 페이지 작성
 
-- 간략하게 about, resume, projets 페이지에 동적 animation 작동
+- 간략하게 about, resume, projects 페이지에 동적 animation 작동
 
 - 여러 Projects 를 categorize 및 각각의 github, live-demo 링크 적용
 
