@@ -1,6 +1,6 @@
 import { IProject, IService, ISkills } from "../type";
-import { RiComputerLine } from "react-icons/ri";
-import { FaServer } from "react-icons/fa";
+import { RiComputerLine, RiFlutterFill } from "react-icons/ri";
+import { FaReact, FaServer } from "react-icons/fa";
 import { AiOutlineApi } from "react-icons/ai";
 import { BsCircleFill } from "react-icons/bs";
 import { MdDeveloperMode } from "react-icons/md";
@@ -12,30 +12,31 @@ import { MdReportProblem } from "react-icons/md";
 export const services: IService[] = [
   {
     id: 1,
-    Icon: RiComputerLine,
+    Icon: RiFlutterFill,
+    title: "Flutter Development",
+    about:
+      "Create Outstanding mobile app using flutter framework suited for <b>Android</b>, <b>iOS</b> and <b>Web</b>",
+  },
+  {
+    id: 2,
+    Icon: FaReact,
     title: "Frontend Development",
     about:
       "I can build a beautiful and scalable SPA using <b> HTML</b>, <b>SCSS</b>, <b>React</b> and <b>Vue.js</b>",
   },
   {
-    id: 2,
+    id: 3,
     Icon: FaServer,
     title: "Network",
     about:
       "Design and install network system such as cabling, routers, switches and servers",
   },
   {
-    id: 3,
+    id: 4,
     Icon: FaPhotoVideo,
     title: "UI Edit",
     about:
       "Handle stunning user interface and outstanding photos and videos editing using photoshop and Premier Pro",
-  },
-  {
-    id: 4,
-    Icon: BsCodeSlash,
-    title: "Clean cord",
-    about: "Focus on writing maintainable, modular and refactoring clean code",
   },
   {
     id: 5,
@@ -56,36 +57,42 @@ export const services: IService[] = [
 export const languages: ISkills[] = [
   {
     id: 1,
+    name: "Flutter",
+    level: "90%",
+    Icon: BsCircleFill,
+  },
+  {
+    id: 2,
     name: "JavaScript",
     level: "80%",
     Icon: BsCircleFill,
   },
   {
-    id: 2,
+    id: 3,
     name: "TypeScript",
     level: "60%",
     Icon: BsCircleFill,
   },
   {
-    id: 3,
+    id: 4,
     name: "React",
     level: "70%",
     Icon: BsCircleFill,
   },
   {
-    id: 4,
+    id: 5,
     name: "Vue.js",
     level: "70%",
     Icon: BsCircleFill,
   },
   {
-    id: 5,
+    id: 6,
     name: "Firebase",
     level: "60%",
     Icon: BsCircleFill,
   },
   {
-    id: 6,
+    id: 7,
     name: "SASS",
     level: "80%",
     Icon: BsCircleFill,
@@ -260,5 +267,28 @@ export const projectsData: IProject[] = [
     github_url: "https://github.com/jacobkosmart/portfolio-nexjs-ts-tailwind",
     category: ["Next.js", "TypeScript"],
     key_techs: ["Next.js", "TypeScript", "TailwinCss"],
+  },
+  {
+    id: 12,
+    name: "Weather App",
+    description:
+      "Current weather condition in your geological position to check degree, fine dust etc.",
+    img_path: "/images/weather.jpeg",
+    deployed_url:
+      "https://play.google.com/store/apps/details?id=info.jacobko.weather_app&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1",
+    github_url: "https://github.com/jacobkosmart/weather-app-flutter",
+    category: ["Flutter"],
+    key_techs: ["Weather-API", "HTTP", "PlayStore"],
+  },
+  {
+    id: 13,
+    name: "BST(BMI/StopWatch/TodoList)",
+    description:
+      "To check your BMI, recode sec time using stopwatch and manage your todo lists",
+    img_path: "/images/bst.gif",
+    deployed_url: "https://bst.jacobko.info/#/",
+    github_url: "https://github.com/jacobkosmart/bmi-stopwatch-todo-flutter",
+    category: ["Flutter"],
+    key_techs: ["Firebase", "Splash Screen", "StatefulWidget"],
   },
 ];

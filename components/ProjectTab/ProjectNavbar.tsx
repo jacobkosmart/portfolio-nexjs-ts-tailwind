@@ -7,6 +7,7 @@ const ProjectNavbar: React.FC<{
   return (
     <div className="flex px-3 py-2 space-x-3 overflow-x-auto list-none">
       <ProjectNavItem value="all" {...props} />
+      <ProjectNavItem value="Flutter" {...props} />
       <ProjectNavItem value="Vanilla-JS" {...props} />
       <ProjectNavItem value="React" {...props} />
       <ProjectNavItem value="TypeScript" {...props} />

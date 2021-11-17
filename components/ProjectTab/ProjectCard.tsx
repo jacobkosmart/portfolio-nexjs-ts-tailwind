@@ -60,12 +60,16 @@ const ProjectCard: React.FC<{
             >
               <a
                 href={github_url}
+                target="_blank"
+                rel="noreferrer"
                 className="flex items-center px-4 py-2 space-x-3 text-lg bg-gray-200 dark:bg-dark-200"
               >
                 <AiFillGithub /> <span>Github</span>
               </a>
               <a
                 href={deployed_url}
+                target="_blank"
+                rel="noreferrer"
                 className="flex items-center px-4 py-2 space-x-3 text-lg bg-gray-200 dark:bg-dark-200"
               >
                 <AiFillProject /> <span>Project</span>

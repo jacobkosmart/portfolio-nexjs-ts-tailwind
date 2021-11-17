@@ -33,6 +33,7 @@ export interface IProject {
 }
 
 export type Category =
+  | "Flutter"
   | "Vanilla-JS"
   | "React"
   | "Vue.js"
