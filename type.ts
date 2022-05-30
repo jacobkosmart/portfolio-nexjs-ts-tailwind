@@ -33,10 +33,11 @@ export interface IProject {
 }
 
 export type Category =
+  | "iOS"
   | "Flutter"
-  | "Vanilla-JS"
   | "React"
+  | "Next.js"
   | "Vue.js"
-  | "Firebase"
   | "TypeScript"
-  | "Next.js";
+  | "Vanilla-JS"
+  | "Firebase";

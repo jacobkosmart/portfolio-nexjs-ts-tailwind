@@ -35,10 +35,10 @@ const About = ({ endpoint }) => {
       exit="exit"
     >
       <h5 className="my-3 font-medium">
-        Creative Front-End Developer providing high-impact web solutions for
-        diverse industry organizations. Skilled in designing, developing and
-        testing multiple mobile and web based applications incorporating a range
-        of technologies.
+        Creative iOS Developer providing high-impact ios and android solutions
+        for diverse industry organizations. Skilled in designing, developing and
+        testing multiple mobile APP and web based applications incorporating a
+        range of technologies.
       </h5>
       <div
         className="flex-grow p-4 mt-5 bg-gray-400 dark:bg-dark-100"
