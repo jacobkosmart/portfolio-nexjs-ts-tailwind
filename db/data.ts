@@ -30,7 +30,7 @@ export const services: IService[] = [
     Icon: FaReact,
     title: "Frontend Development",
     about:
-      "I can build a beautiful and scalable SPA using <b> HTML</b>, <b>SCSS</b>, <b>React</b> and <b>Vue.js</b>",
+      "Build a beautiful and scalable SPA using <b> HTML</b>, <b>SCSS</b>, <b>React</b> and <b>Vue.js</b>",
   },
   {
     id: 4,

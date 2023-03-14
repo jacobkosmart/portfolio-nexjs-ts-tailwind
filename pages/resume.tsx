@@ -24,6 +24,19 @@ const resume = () => {
         <div>
           <h5 className="my-5 text-2xl font-bold">Experience</h5>
           <div>
+            <h5 className="my-2 text-xl font-bold">Online Tutor - SwiftUI</h5>
+            <p className="font-semibold">Inflearn (March 2022 ~ )</p>
+            <p className="my-3">
+              Created online video tutorial in SwiftUI and continue to make it
+              (Korean){" "}
+            </p>
+            <p>
+              <a href="https://inf.run/yxeH" target="_blank" rel="noreferrer">
+                👉 Go to the online tutoring site
+              </a>
+            </p>
+          </div>
+          <div>
             <h5 className="my-2 text-xl font-bold">
               Assistant manager of overseas sales
             </h5>
